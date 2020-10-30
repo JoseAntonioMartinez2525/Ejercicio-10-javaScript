@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width initial-scale=5.0">  
+<title>Ejercicio 10</title>
+</head>
+	<p>determina si esa cadena está formada sólo por mayúsculas, sólo por minúsculas o por una mezcla de amba</p>
+<body>
+<script type="text/javascript">
+	console.log("Ingresa una palabra: ");
+function info(cadena) {
+
+  var resultado = "La palabra \""+cadena+"\" ";
+
+  if(cadena == cadena.toUpperCase()) {
+
+    resultado += " está formada sólo por mayúsculas";
+  }
+  else if(cadena == cadena.toLowerCase()) {
+    resultado += " está formada sólo por minúsculas";
+  }
+  else {
+    resultado += " está formada por mayúsculas y minúsculas";
+  }
+
+  return resultado;
+}	
+
+alert(info(prompt(" ")));
+
+</script>
+</body>
+</html>
